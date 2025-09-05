@@ -1,0 +1,15 @@
+name: Teste Release
+
+on:
+  workflow_dispatch:   # permite rodar manualmente no GitHub
+
+jobs:
+  test-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Mostrar conteúdo do arquivo
+        run: cat meu-arquivo.txt
